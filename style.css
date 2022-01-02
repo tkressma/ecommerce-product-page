@@ -113,6 +113,8 @@ img {
 }
 
 .product__description {
+  margin: 0;
+  line-height: 1.5;
   color: hsl(219, 9%, 45%);
 }
 
@@ -129,7 +131,7 @@ img {
   color: hsl(26, 100%, 55%);
   font-weight: 700;
   border-radius: 10px;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   background-color: hsl(25, 100%, 94%);
 }
 
@@ -137,6 +139,10 @@ img {
   color: hsl(220, 14%, 75%);
   font-weight: bold;
   text-decoration: line-through;
+}
+
+.product__display-slider {
+  display: none;
 }
 
 .product__display-thumbnail {
@@ -218,6 +224,10 @@ img {
   .product__display {
     border-radius: 2.5%;
     margin-bottom: 1.5rem;
+  }
+
+  .product__display-slider {
+    display: flex;
   }
 
   .product__information {
