@@ -78,9 +78,6 @@ img {
 
 .product {
   display: flex;
-}
-
-.product--mobile {
   flex-direction: column;
 }
 
@@ -90,6 +87,28 @@ img {
 
 .product__discount {
   margin: 0 auto;
+}
+
+.product__information {
+  margin: 1rem;
+}
+
+.product__company {
+  color: hsl(26, 100%, 55%);
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product__title {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  color: hsl(0, 0%, 0%);
+}
+
+.product__description {
+  color: hsl(219, 9%, 45%);
 }
 
 @media only screen and (min-width: 1000px) {
@@ -145,7 +164,7 @@ img {
     border-bottom: 4px solid hsl(26, 100%, 55%);
   }
 
-  .product--mobile {
+  .product {
     flex-direction: row;
     width: 75%;
     margin: 0 auto;
