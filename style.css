@@ -116,6 +116,29 @@ img {
   color: hsl(219, 9%, 45%);
 }
 
+.product__pricing {
+  align-items: center;
+}
+
+.product__price {
+  color: hsl(0, 0%, 0%);
+  margin-right: 1rem;
+}
+
+.product__discount {
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  background-color: hsl(25, 100%, 94%);
+}
+
+.product__retail-price {
+  color: hsl(220, 14%, 75%);
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
 @media only screen and (min-width: 1000px) {
   .container {
     width: 80%;
@@ -179,10 +202,23 @@ img {
     width: 45%;
   }
 
+  .product__display {
+    border-radius: 2.5%;
+  }
+
   .product__information {
     flex-direction: column;
     justify-content: center;
     max-width: 800px;
     width: 45%;
+  }
+
+  .product__pricing {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .product__price {
+    margin: 0.5rem 1rem 0.5rem 0;
   }
 }
