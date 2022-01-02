@@ -38,7 +38,7 @@ img {
 }
 
 .nav {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .nav__list {
@@ -55,11 +55,28 @@ img {
   color: hsl(219, 9%, 45%);
 }
 
+.nav__item--cart {
+  margin-right: 1rem;
+}
+
+.nav__item--cart:after {
+  content: attr(value);
+  background: hsl(26, 100%, 55%);
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 0 6px;
+  position: relative;
+  left: -15px;
+  top: -15px;
+}
+
 .nav__list--primary {
   display: none;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   .container {
     width: 80%;
   }
@@ -69,9 +86,21 @@ img {
     margin-right: 3rem;
   }
 
+  .nav__item--cart {
+    margin-right: 2rem;
+  }
+
   .avatar {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+  }
+
+  .avatar:hover,
+  .avatar:focus {
+    outline: none;
+    border: 2px solid hsl(26, 100%, 55%);
   }
 
   .nav__list--mobile {
@@ -83,11 +112,20 @@ img {
   }
 
   .nav {
-    padding: 3rem 0;
-    border-bottom: 2px solid #f1f1f1;
+    padding: 0;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
   }
 
-  .nav__item + .nav__item {
-    margin-left: 2rem;
+  .nav__item > a {
+    display: block;
+    border-bottom: 4px solid transparent;
+    padding: 3rem 0;
+    margin: 0 1rem;
+  }
+
+  .nav__item > a:hover,
+  .nav__item > a:focus {
+    outline: none;
+    border-bottom: 4px solid hsl(26, 100%, 55%);
   }
 }
