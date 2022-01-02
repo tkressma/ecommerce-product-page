@@ -15,7 +15,7 @@ img {
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -49,6 +49,10 @@ img {
   align-items: center;
 }
 
+.nav__list--primary {
+  display: none;
+}
+
 .nav__item > a {
   text-decoration: none;
   font-weight: 400;
@@ -72,8 +76,20 @@ img {
   top: -15px;
 }
 
-.nav__list--primary {
-  display: none;
+.product {
+  display: flex;
+}
+
+.product--mobile {
+  flex-direction: column;
+}
+
+.product__current-price {
+  align-items: center;
+}
+
+.product__discount {
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -127,5 +143,11 @@ img {
   .nav__item > a:focus {
     outline: none;
     border-bottom: 4px solid hsl(26, 100%, 55%);
+  }
+
+  .product--mobile {
+    flex-direction: row;
+    width: 75%;
+    margin: 0 auto;
   }
 }
