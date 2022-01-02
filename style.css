@@ -79,6 +79,8 @@ img {
 .product {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product__current-price {
@@ -90,6 +92,9 @@ img {
 }
 
 .product__information {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
   margin: 1rem;
 }
 
@@ -167,6 +172,17 @@ img {
   .product {
     flex-direction: row;
     width: 75%;
-    margin: 0 auto;
+    margin: 5rem auto;
+  }
+
+  .product__imgs {
+    width: 45%;
+  }
+
+  .product__information {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    width: 45%;
   }
 }
