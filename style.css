@@ -32,11 +32,6 @@ img {
   padding: 1rem;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
-
 .logo {
   margin-left: 1rem;
 }
@@ -45,24 +40,15 @@ img {
   width: 20px;
   height: 20px;
 }
-.nav__item + .nav__item {
-  margin-left: 1rem;
-}
 
 .nav__list {
   margin: 0;
   padding: 0;
-
   list-style: none;
   display: flex;
-
   align-items: center;
 }
 
 .nav__list--primary {
   display: none;
-}
-
-.nav__list--secondary {
-  display: flex;
 }
