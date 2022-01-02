@@ -34,14 +34,22 @@
     </style>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container row">
-        <a href="#Menu" class="menu"
-          ><img src="./images/icon-menu.svg" alt=""
-        /></a>
-        <a href="#"><img src="./images/logo.svg" alt="" /></a>
+        <nav class="nav__list nav__list--mobile">
+          <a href="#Menu" class="menu"
+            ><img src="./images/icon-menu.svg" alt="Hamburger menu"
+          /></a>
+          <a href="#" class="logo"
+            ><img src="./images/logo.svg" alt="Sneakers brand logo"
+          /></a>
+        </nav>
+
         <nav class="nav">
-          <ul class="nav__list">
+          <ul class="nav__list nav__list--primary">
+            <a href="#" class="logo"
+              ><img src="./images/logo.svg" alt="Sneakers brand logo"
+            /></a>
             <li class="nav__item">
               <a href="#Collections">Colletions</a>
             </li>
@@ -62,12 +70,15 @@
           <ul class="nav__list nav__list--secondary">
             <li class="nav__item">
               <a href="#Cart" class="nav__link"
-                ><img src="./images/icon-cart.svg" alt=""
+                ><img src="./images/icon-cart.svg" alt="Cart icon"
               /></a>
             </li>
             <li class="nav__item">
               <a href="#Profile" class="nav__link"
-                ><img src="./images/image-avatar.png" alt=""
+                ><img
+                  class="avatar"
+                  src="./images/image-avatar.png"
+                  alt="User profile picture"
               /></a>
             </li>
           </ul>
@@ -75,10 +86,12 @@
       </div>
     </header>
 
-    Sneaker Company Fall Limited Edition Sneakers These low-profile sneakers are
-    your perfect casual wear companion. Featuring a durable rubber outer sole,
-    they’ll withstand everything the weather can offer. $125.00 50% $250.00 0
-    Add to cart
+    <div>
+      Sneaker Company Fall Limited Edition Sneakers These low-profile sneakers
+      are your perfect casual wear companion. Featuring a durable rubber outer
+      sole, they’ll withstand everything the weather can offer. $125.00 50%
+      $250.00 0 Add to cart
+    </div>
 
     <div class="attribution">
       Challenge by
