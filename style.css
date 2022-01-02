@@ -28,10 +28,6 @@ img {
   width: 100%;
 }
 
-.header {
-  padding: 1rem;
-}
-
 .logo {
   margin-left: 1rem;
 }
@@ -41,12 +37,16 @@ img {
   height: 20px;
 }
 
+.nav {
+  padding: 1rem;
+}
+
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .nav__list--primary {
