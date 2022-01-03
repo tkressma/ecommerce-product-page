@@ -277,6 +277,10 @@ img {
     width: 45%;
   }
 
+  .product__description {
+    margin: 1rem 0;
+  }
+
   .product__title {
     font-size: 3rem;
   }
