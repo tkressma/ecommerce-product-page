@@ -113,7 +113,7 @@ img {
 }
 
 .product__description {
-  margin: 0 0 0.5rem 0;
+  margin: 0;
   line-height: 1.5;
   color: hsl(219, 9%, 45%);
 }
@@ -123,6 +123,7 @@ img {
 }
 
 .product__price {
+  font-size: 2rem;
   color: hsl(0, 0%, 0%);
   margin-right: 1rem;
 }
@@ -163,16 +164,36 @@ img {
 
 .product__add-items {
   padding: 1rem 0;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: hsl(223, 64%, 98%);
+}
+
+.product__change-item-amount {
+  border: none;
+  background-color: inherit;
+}
+
+#product__item-amount {
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .product__add-to-cart {
   margin: 1rem 0;
   padding: 1rem 0;
-  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
   background-color: hsl(26, 100%, 55%);
   box-shadow: 0px 20px 30px -5px hsl(26, 100%, 55%, 0.3);
+}
+
+.product__add-to-cart:hover,
+.product__add-to-cart:focus {
+  background-color: hsl(26, 100%, 55%, 0.75);
 }
 
 @media only screen and (min-width: 1000px) {
@@ -230,11 +251,13 @@ img {
 
   .product {
     flex-direction: row;
+    justify-content: space-between;
     width: 75%;
     margin: 5rem auto;
   }
 
   .product__imgs {
+    max-width: 450px;
     width: 45%;
   }
 
@@ -250,7 +273,15 @@ img {
   .product__information {
     flex-direction: column;
     justify-content: center;
+    max-width: 600;
     width: 45%;
+  }
+
+  .product__title {
+    font-size: 3rem;
+  }
+  product__add-to-cart .product__company {
+    font-size: 1rem;
   }
 
   .product__pricing {
@@ -262,17 +293,29 @@ img {
     margin: 0.5rem 1rem 0.5rem 0;
   }
 
+  .product__retail-price {
+    font-size: 1.15rem;
+  }
+
   .product__purchase {
-    margin: 2rem 0;
+    margin: 2.5rem 0;
     flex-direction: row;
   }
 
   .product__add-items {
-    width: 34%;
+    padding: 1rem;
+    width: 40%;
+    align-items: center;
   }
 
   .product__add-to-cart {
     margin: 0;
-    width: 64%;
+    width: 58%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .product {
+    justify-content: space-evenly;
   }
 }
