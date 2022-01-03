@@ -32,6 +32,7 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -67,9 +68,13 @@
           </ul>
 
           <ul class="nav__list nav__list--secondary">
-            <li class="nav__item--cart" value="5">
+            <li class="nav__item--cart">
+              <span class="hidden" id="cart__item-count"></span>
               <a href="#Cart" class="nav__link"
-                ><img src="./images/icon-cart.svg" alt="Cart icon"
+                ><img
+                  src="./images/icon-cart.svg"
+                  alt="Cart icon"
+                  id="cart__open"
               /></a>
             </li>
             <li class="nav__item--avatar">
@@ -84,23 +89,11 @@
         </nav>
       </div>
 
-      <div class="cart row">
+      <div class="cart hidden row">
         <h3 class="cart__title">Cart</h3>
         <div class="cart__contents">
-          <img
-            src="./images/image-product-1-thumbnail.jpg"
-            alt=""
-            class="cart__product-img"
-          />
-          <div class="cart__product-info">
-            <p>Product title</p>
-            <p>Placeholder Value $XXX</p>
-          </div>
-          <button class="cart__delete-item">
-            <img src="./images/icon-delete.svg" alt="" />
-          </button>
-        </div>
-        <button class="cart__checkout">Checkout</button>
+          <p class="cart__empty">Your cart is empty.</p>
+ 
       </div>
     </header>
 
@@ -141,7 +134,7 @@
           <h1 class="product__title">Fall Limited Edition Sneakers</h1>
           <p class="product__description">
             These low-profile sneakers are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, they’ll withstand everything
+            Featuring a durable rubber outer sole, they'll withstand everything
             the weather can offer.
           </p>
 
@@ -157,11 +150,19 @@
           <div class="product__purchase row">
             <div class="product__add-items row">
               <button class="product__change-item-amount" id="lower">
-                <img src="./images/icon-minus.svg" alt="" />
+                <img
+                  src="./images/icon-minus.svg"
+                  alt="Add item"
+                  id="lower-icon"
+                />
               </button>
               <span id="product__item-amount">0</span>
               <button class="product__change-item-amount" id="higher">
-                <img src="./images/icon-plus.svg" alt="" />
+                <img
+                  src="./images/icon-plus.svg"
+                  alt="Remove item"
+                  id="higher-icon"
+                />
               </button>
             </div>
             <button class="product__add-to-cart">
