@@ -254,6 +254,30 @@ img {
   opacity: 50%;
 }
 
+.product__main-display {
+  position: relative;
+}
+
+.change-image-btn {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 20px);
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.previous {
+  left: 16px;
+}
+
+.next {
+  right: 16px;
+}
+
 .active {
   opacity: 50%;
 }
@@ -331,7 +355,7 @@ img {
     width: 80%;
   }
 
-  .product__display {
+  #product__display-image {
     border-radius: 2.5%;
     margin: 1.5rem 0;
   }

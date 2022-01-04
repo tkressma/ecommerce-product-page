@@ -2,7 +2,7 @@
 
 const itemCounter = document.querySelector("#product__item-amount");
 const itemCartDisplay = document.querySelector("#cart__item-count");
-const productDisplayImg = document.querySelector(".product__display");
+const productDisplayImg = document.querySelector("#product__display-image");
 const addToCart = document.querySelector(".product__add-to-cart");
 const cartIcon = document.querySelector("#cart__open");
 const cartItem = document.querySelector(".cart__item");
