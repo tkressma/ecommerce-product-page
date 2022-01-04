@@ -237,10 +237,25 @@ img {
 }
 
 .product__display-thumbnail {
-  object-fit: cover;
+  display: flex;
+  border: none;
   cursor: pointer;
-  border-radius: 10px;
-  min-width: 0;
+  border-radius: 5px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.active-thumbnail {
+  outline: 2px solid hsl(26, 100%, 55%);
+}
+
+.product__display-thumbnail:hover {
+  opacity: 50%;
+}
+
+.active {
+  opacity: 50%;
 }
 
 .product__display-thumbnail + .product__display-thumbnail {
@@ -328,7 +343,6 @@ img {
   .product__information {
     flex-direction: column;
     justify-content: center;
-    max-width: 450px;
     margin-top: 2rem;
     width: 80%;
   }

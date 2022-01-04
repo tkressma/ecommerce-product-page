@@ -2,6 +2,7 @@
 
 const itemCounter = document.querySelector("#product__item-amount");
 const itemCartDisplay = document.querySelector("#cart__item-count");
+const productDisplayImg = document.querySelector(".product__display");
 const addToCart = document.querySelector(".product__add-to-cart");
 const cartIcon = document.querySelector("#cart__open");
 const cartItem = document.querySelector(".cart__item");
@@ -73,3 +74,37 @@ const removeItemsFromCart = () => {
   itemCartDisplay.classList.add("hidden");
   itemCountDisplay = 0;
 };
+
+const productThumbnailsImages = document.querySelectorAll(
+  ".product__display-thumbnail"
+);
+const productThumbnails = document.querySelector(".product__display-slider");
+
+const clearActive = () => {
+  const activeImg = document.getElementsByClassName("active");
+  activeImg[0].classList.remove("active");
+
+  productThumbnailsImages.forEach((thumbnail) => {
+    thumbnail.classList.remove("active-thumbnail");
+  });
+};
+
+productThumbnails.addEventListener("click", (e) => {
+  if (e.target.classList.contains("product__display-thumbnail-img")) {
+    clearActive();
+    const photoNumber = e.target.getAttribute("value");
+    changeDisplayImage(photoNumber);
+    changeThumbnail(e.target);
+  }
+});
+
+const changeThumbnail = (thumbnail) => {
+  thumbnail.classList.add("active");
+  thumbnail.parentNode.classList.add("active-thumbnail");
+};
+
+const changeDisplayImage = (photoNumber) =>
+  productDisplayImg.setAttribute(
+    "src",
+    `./images/image-product-${photoNumber}.jpg`
+  );
