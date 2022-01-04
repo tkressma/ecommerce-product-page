@@ -50,7 +50,7 @@ const updateCartContents = (emptyCart) => {
 
 // Displays the items in the car when a user adds them
 const displayItemsInCart = () => {
-  cartItem.innerHTML = `<img src='./images/image-product-1-thumbnail.jpg' alt='' class='cart__product-img' /> <div class='cart__product-info'> <p>Autumn Limited Edition...</p> <p>$125.00 x ${itemCountDisplay} <b>$${
+  cartItem.innerHTML = `<img src='./images/image-product-1-thumbnail.jpg' alt='' class='cart__product-img' /> <div class='cart__product-info'> <p>Fall Limited Edition Sneakers</p> <p>$125.00 x ${itemCountDisplay} <b>$${
     125 * itemCountDisplay
   }</b></p> </div> <button class='cart__delete-item'> <img src='./images/icon-delete.svg' alt='' /> </button> </div>`;
 
