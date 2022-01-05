@@ -113,11 +113,11 @@ const changeDisplayImage = (photoNumber) =>
   );
 
 prevBtn.addEventListener("click", () => {
-  photoNumber === 1 ? (photoNumber = 4) : --photoNumber;
+  photoNumber === 1 ? (photoNumber = 4) : photoNumber--;
   changeDisplayImage(photoNumber);
 });
 
 nextBtn.addEventListener("click", () => {
-  photoNumber === 4 ? (photoNumber = 1) : ++photoNumber;
+  photoNumber === 4 ? (photoNumber = 1) : photoNumber++;
   changeDisplayImage(photoNumber);
 });
