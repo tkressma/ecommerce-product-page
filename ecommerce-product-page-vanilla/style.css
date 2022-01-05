@@ -254,7 +254,7 @@ img {
   opacity: 50%;
 }
 
-.product__main-display {
+.product__main-image {
   position: relative;
 }
 
@@ -350,12 +350,12 @@ img {
     margin: 3rem auto;
   }
 
-  .product__imgs {
+  .product__display {
     max-width: 500px;
     width: 80%;
   }
 
-  #product__display-image {
+  #featured {
     border-radius: 2.5%;
     margin: 1.5rem 0;
   }
@@ -440,13 +440,14 @@ img {
     margin: 4rem auto;
   }
 
-  .product__imgs {
+  .product__display {
     width: 45%;
   }
 
   .product__information {
     max-width: 600px;
     width: 45%;
+    margin-top: 1rem;
   }
 
   .product__description {

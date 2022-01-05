@@ -2,8 +2,10 @@
 
 const itemCounter = document.querySelector("#product__item-amount");
 const itemCartDisplay = document.querySelector("#cart__item-count");
-const productDisplayImg = document.querySelector("#product__display-image");
+const productDisplayImg = document.querySelector("#featured");
 const addToCart = document.querySelector(".product__add-to-cart");
+const prevBtn = document.querySelector(".previous");
+const nextBtn = document.querySelector(".next");
 const cartIcon = document.querySelector("#cart__open");
 const cartItem = document.querySelector(".cart__item");
 const cartContents = document.querySelector(".cart__contents");
@@ -11,6 +13,7 @@ const cartCheckout = document.querySelector(".cart__checkout");
 const cartEmptyMsg = document.querySelector(".cart__empty");
 let itemCountBuffer = Number(itemCartDisplay.innerHTML);
 let itemCountDisplay = 0;
+let photoNumber = 1;
 
 // Item Add/Remove
 document.querySelector(".product__add-items").addEventListener("click", (e) => {
@@ -92,7 +95,7 @@ const clearActive = () => {
 productThumbnails.addEventListener("click", (e) => {
   if (e.target.classList.contains("product__display-thumbnail-img")) {
     clearActive();
-    const photoNumber = e.target.getAttribute("value");
+    photoNumber = e.target.getAttribute("value");
     changeDisplayImage(photoNumber);
     changeThumbnail(e.target);
   }
@@ -108,3 +111,13 @@ const changeDisplayImage = (photoNumber) =>
     "src",
     `./images/image-product-${photoNumber}.jpg`
   );
+
+prevBtn.addEventListener("click", () => {
+  photoNumber === 1 ? (photoNumber = 4) : --photoNumber;
+  changeDisplayImage(photoNumber);
+});
+
+nextBtn.addEventListener("click", () => {
+  photoNumber === 4 ? (photoNumber = 1) : ++photoNumber;
+  changeDisplayImage(photoNumber);
+});
