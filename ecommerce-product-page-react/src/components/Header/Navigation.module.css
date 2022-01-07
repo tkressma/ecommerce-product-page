@@ -45,6 +45,11 @@
     border-bottom: 4px solid transparent;
   }
 
+  .menu--desktop > li > a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .menu--desktop > li:hover {
     border-bottom: 4px solid orange;
   }

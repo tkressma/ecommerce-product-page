@@ -13,14 +13,24 @@ export default function Navigation() {
         <img src={companyLogo} alt="SNEAKERS logo" />
       </a>
       <button className={`${styles.menu} ${styles["menu--mobile"]}`}>
-        <img src={burgerMenu} />
+        <img src={burgerMenu} alt="Navigation menu" />
       </button>
       <ul className={`${styles.menu} ${styles["menu--desktop"]}`}>
-        <li>Collections</li>
-        <li>Men</li>
-        <li>Women</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <a href="#collections">Collections</a>
+        </li>
+        <li>
+          <a href="#men">Men</a>
+        </li>
+        <li>
+          <a href="#women">Women</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
   );
