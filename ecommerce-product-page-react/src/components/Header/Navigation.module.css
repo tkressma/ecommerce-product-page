@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  padding: 1.5rem 0;
+  height: 100%;
 }
 
 .nav__items {
@@ -15,6 +15,7 @@
   height: 100%;
   gap: 1rem;
   list-style: none;
+  margin: 0;
 }
 
 .menu--desktop {
@@ -26,6 +27,11 @@
   align-items: center;
   margin: auto 0.5rem;
   height: 100%;
+  border-bottom: 4px solid transparent;
+}
+
+.menu--desktop > li:hover {
+  border-bottom: 4px solid orange;
 }
 
 .menu--mobile {
@@ -37,7 +43,7 @@
 }
 
 @media (min-width: 768px) {
-  .nav {
+  .menu--desktop > li {
     padding: 3rem 0;
   }
 
