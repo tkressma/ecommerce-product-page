@@ -8,3 +8,9 @@
   flex-direction: row;
   align-items: center;
 }
+
+@media (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+  }
+}
