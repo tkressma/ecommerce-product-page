@@ -4,7 +4,7 @@ import Cart from "./Cart";
 import ProfileNav from "./ProfileNav";
 const UserControls = () => (
   <div className={style["user-controls"]}>
-    <Cart value="0" />
+    <Cart value="5" />
     <ProfileNav />
   </div>
 );

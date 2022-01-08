@@ -8,15 +8,21 @@
 .cart__item-count {
   background: hsl(26, 100%, 55%);
   color: white;
-  font-weight: 700;
   font-size: 12px;
+  font-weight: 700;
   border-radius: 10px;
   padding: 0 6px;
   position: absolute;
-  left: 30px;
-  top: 42px;
+  left: 50%;
+  top: 0;
 }
 
 .empty {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .cart__item-count {
+    top: 35%;
+  }
 }
