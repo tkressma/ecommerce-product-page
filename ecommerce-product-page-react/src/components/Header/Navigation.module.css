@@ -19,15 +19,29 @@
 .menu--mobile {
   display: flex;
   align-items: center;
-  margin: 0 1rem;
+  margin-right: 1rem;
   background: transparent;
   border: none;
 }
 
 @media (min-width: 768px) {
   .nav {
-    flex-direction: row;
     justify-content: space-between;
+  }
+
+  .menu--mobile {
+    padding: 3rem 0;
+    border-bottom: 4px solid transparent;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav {
+    flex-direction: row;
+  }
+
+  .menu--mobile {
+    display: none;
   }
 
   .menu--desktop {
@@ -38,8 +52,9 @@
   .menu--desktop > li {
     display: flex;
     align-items: center;
-    padding: 3rem 0;
     color: hsl(219, 9%, 45%);
+    padding: 3rem 0;
+
     cursor: pointer;
     margin-right: calc(12.5vw / 5);
     border-bottom: 4px solid transparent;
@@ -52,9 +67,5 @@
 
   .menu--desktop > li:hover {
     border-bottom: 4px solid orange;
-  }
-
-  .menu--mobile {
-    display: none;
   }
 }
