@@ -1,0 +1,22 @@
+.profile-container {
+  border: none;
+  background: inherit;
+}
+.profile-picture {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-picture:hover,
+.profile-picture:focus {
+  outline: 2px solid hsl(26, 100%, 55%);
+}
+
+@media (min-width: 768px) {
+  .profile-picture {
+    height: 50px;
+    width: 50px;
+  }
+}

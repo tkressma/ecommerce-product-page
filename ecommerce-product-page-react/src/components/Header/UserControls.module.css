@@ -1,0 +1,13 @@
+.user-controls {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 10%;
+  min-width: 90px;
+}
+
+@media (min-width: 768px) {
+  .user-controls {
+    min-width: 125px;
+  }
+}
