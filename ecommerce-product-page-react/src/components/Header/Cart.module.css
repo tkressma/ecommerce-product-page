@@ -1,5 +1,22 @@
 .cart {
+  position: relative;
   border: none;
   background: transparent;
   width: 50%;
+}
+
+.cart__item-count {
+  background: hsl(26, 100%, 55%);
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 0 6px;
+  position: absolute;
+  left: 30px;
+  top: 42px;
+}
+
+.empty {
+  display: none;
 }
